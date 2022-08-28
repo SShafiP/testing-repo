@@ -1,3 +1,37 @@
 Bismillahir Rahmanir Raheem!
 
-This is a test document.
+This is a test document. Use this document for testing the Git system. This document can also be used for storing useful info
+about git (I really hate this git thing!).
+
+One way to add both a title and a description to a commit message from the command line:
+git commit -m "Title" -m "Description ..........";
+
+Switch to a particular version of a file:
+git checkout <commit-hash> <filename>
+
+This is also good: git checkout <commit-tag> <filename>
+For example: git checkout Bismillah Notes.txt
+
+Note that if I jump to another version like this, this jumping is itself a change, and it can also be committed.
+
+If the "git log" or "git status" (or any other message-displaying command) is multi-page and fills out the entire terminal,
+press "q" to quit that display and get back to command line in that terminal.
+
+
+Example of a 3-way merge:
+# Start a new feature
+git checkout -b new-feature main
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+# Develop the main branch
+git checkout main
+# Edit some files
+git add <file>
+git commit -m "Make some super-stable changes to main"
+# Merge in the new-feature branch
+git merge new-feature
+git branch -d new-feature
