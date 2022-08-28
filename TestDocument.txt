@@ -3,6 +3,20 @@ Bismillahir Rahmanir Raheem!
 This is a test document. Use this document for testing the Git system. This document can also be used for storing useful info
 about git (I really hate this git thing!).
 
+Basic workflow:
+
+Start a git repo by opening a terminal (e.g. Powershell or Command prompt) at a particular directory that
+you want to be the repo. Then type the command "git init".
+
+Create files. Then add them to the git Staging Area using the command "git add <file name>". You can also
+add all files using "git add .".
+
+Commit this change using "git commit -m "<Commit message>"".
+
+Modify those files. Then again add them by "git add <file name>" (or "git add .").
+
+Then commit this change again using "git commit -m "<Commit message>"".
+
 One way to add both a title and a description to a commit message from the command line:
 git commit -m "Title" -m "Description ..........";
 
